@@ -32,7 +32,7 @@ A Home Assistant custom integration that fetches **US pollen data from [kleenex.
 
 1. Go to **Settings → Devices & Services → Add Integration**
 2. Search for **US Pollen Radar**
-3. Enter your **city name** (e.g. `Milford`) and a display name
+3. Enter your **city name** (e.g. `Milford, CT`) and a display name
 4. Click Submit — sensors appear immediately
 
 ---

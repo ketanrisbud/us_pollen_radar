@@ -1,0 +1,13 @@
+{
+  "domain": "us_pollen_radar",
+  "name": "US Pollen Radar",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/yourusername/us_pollen_radar",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/yourusername/us_pollen_radar/issues",
+  "requirements": ["beautifulsoup4>=4.10.0"],
+  "version": "1.0.0"
+}

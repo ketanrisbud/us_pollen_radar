@@ -1,0 +1,102 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This location is already configured"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Kleenex pollen service",
+      "invalid_city": "No pollen data found for this city. Check spelling or try a nearby city.",
+      "unknown": "Unexpected error occurred"
+    },
+    "step": {
+      "user": {
+        "title": "US Pollen Radar Setup",
+        "description": "Enter a US city name to track pollen levels. Data is fetched from kleenex.com and refreshed once per hour.",
+        "data": {
+          "city": "City name (e.g. Milford)",
+          "name": "Name for this instance"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "trees": {
+        "name": "Trees",
+        "state_attributes": {
+          "level": { "name": "Level" },
+          "species": { "name": "Species" },
+          "details": { "name": "Details" },
+          "forecast": { "name": "Forecast" }
+        }
+      },
+      "trees_level": {
+        "name": "Trees Level",
+        "state": {
+          "low": "Low",
+          "moderate": "Moderate",
+          "high": "High",
+          "very-high": "Very High"
+        }
+      },
+      "grass": {
+        "name": "Grass",
+        "state_attributes": {
+          "level": { "name": "Level" },
+          "species": { "name": "Species" },
+          "details": { "name": "Details" },
+          "forecast": { "name": "Forecast" }
+        }
+      },
+      "grass_level": {
+        "name": "Grass Level",
+        "state": {
+          "low": "Low",
+          "moderate": "Moderate",
+          "high": "High",
+          "very-high": "Very High"
+        }
+      },
+      "weeds": {
+        "name": "Weeds",
+        "state_attributes": {
+          "level": { "name": "Level" },
+          "species": { "name": "Species" },
+          "details": { "name": "Details" },
+          "forecast": { "name": "Forecast" }
+        }
+      },
+      "weeds_level": {
+        "name": "Weeds Level",
+        "state": {
+          "low": "Low",
+          "moderate": "Moderate",
+          "high": "High",
+          "very-high": "Very High"
+        }
+      },
+      "detail_value": {
+        "name": "{name}"
+      },
+      "detail_level": {
+        "name": "{name} Level",
+        "state": {
+          "low": "Low",
+          "moderate": "Moderate",
+          "high": "High",
+          "very-high": "Very High"
+        }
+      },
+      "date": { "name": "Date" },
+      "last_updated": { "name": "Last Updated" },
+      "city": { "name": "City" },
+      "latitude": { "name": "Latitude" },
+      "longitude": { "name": "Longitude" },
+      "error": { "name": "Error" }
+    }
+  },
+  "exceptions": {
+    "dns_error": { "message": "DNS error connecting to Kleenex pollen service" },
+    "unknown_error": { "message": "Unknown error connecting to Kleenex pollen service" }
+  }
+}
